@@ -1,4 +1,4 @@
-﻿const mysql = require('mysql');
+const mysql = require('mysql');
 const { MYSQL_CONF } = require('../config/dbConfig');
 
 // 创建连接对象

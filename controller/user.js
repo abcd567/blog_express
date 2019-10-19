@@ -5,7 +5,7 @@ const login = (username, password) => {
   // 防止sql注入
   username = escape(username);
 
-  //生成加密密码
+  // 生成加密密码
   password = genPassword(password);
   password = escape(password);
 

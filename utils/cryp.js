@@ -5,7 +5,7 @@ const SECRET_KEY = 'YHRMj23h_654g#s12';
 
 // md5加密
 function md5(content) {
-  let md5 = crypto.createHash('md5');
+  const md5 = crypto.createHash('md5');
   return md5.update(content).digest('hex');
 }
 
@@ -15,8 +15,8 @@ function genPassword(password) {
   return md5(str);
 }
 
-//const testRes = genPassword('123');
-//console.log(testRes);
+// const testRes = genPassword('123');
+// console.log(testRes);
 
 module.exports = {
   genPassword,
